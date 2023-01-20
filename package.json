@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
+    "build": "node build",
     "devStart": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.1",
+    "build": "^0.1.4",
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
