@@ -1,7 +1,7 @@
 const express = require("express");
-const { reset } = require("nodemon");
 const router = express.Router();
 const Author = require("../models/author");
+
 //All Authors Route
 router.get("/", async (req, res) => {
   let searchOptions = {};

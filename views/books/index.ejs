@@ -1,0 +1,15 @@
+<h2>Books</h2>
+
+<form action="/books" method="GET">
+    <label>Book</label>
+    <input type="text" placeholder="Search a book" value="<%=locals.searchOptions%>" name="title">
+    <button type="submit">Search</button>
+</form>
+<br>
+<div>
+    <% books.forEach(book=> { %>
+        <div>
+            <%=book.title %>
+        </div>
+        <% }) %>
+</div>
